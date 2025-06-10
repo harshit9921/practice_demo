@@ -1,0 +1,10 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: say-hello
+    image: alpine
+    commands:
+      - echo "🚀 Hello from Drone CI"
+      - echo "✅ Pipeline executed successfully"
